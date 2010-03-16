@@ -1,0 +1,33 @@
+---
+abstract: 'Inflect short English Phrases'
+author:
+  - 'Rafael Kitover <rkitover@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.94
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.94'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Lingua-EN-Inflect-Phrase
+no_index:
+  directory:
+    - inc
+    - t
+provides:
+  Lingua::EN::Inflect::Phrase:
+    file: lib/Lingua/EN/Inflect/Phrase.pm
+    version: 0.01
+requires:
+  Exporter: 5.63
+  Lingua::EN::Inflect: 1.891
+  Lingua::EN::Inflect::Number: 1.1
+  Lingua::EN::Tagger: 0.15
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/rkitover/lingua-en-inflect-phrase.git
+version: 0.01
