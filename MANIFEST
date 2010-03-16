@@ -17,3 +17,5 @@ MANIFEST			This list of files
 META.yml
 README
 t/basic.t
+t/lib/TestPhrase.pm
+t/schema-loader.t
