@@ -29,9 +29,6 @@ SUBROUTINES
   to_S
     Attempts to singularize a phrase unless already singular.
 
-AUTHOR
-    Rafael Kitover, "<rkitover at cpan.org>"
-
 BUGS
     Please report any bugs or feature requests to
     "bug-lingua-en-inflect-phrase at rt.cpan.org", or through the web
@@ -58,6 +55,15 @@ SUPPORT
     *   Search CPAN
 
         <http://search.cpan.org/dist/Lingua-EN-Inflect-Phrase/>
+
+REPOSITORY
+      git clone git://github.com/rkitover/lingua-en-inflect-phrase.git lingua-en-inflect-phrase
+
+SEE ALSO
+    Lingua::EN::Inflect, Lingua::EN::Inflect::Number, Lingua::EN::Tagger
+
+AUTHOR
+    Rafael Kitover <rkitover@cpan.org>
 
 LICENSE AND COPYRIGHT
     Copyright (c) 2010 Rafael Kitover (rkitover@cpan.org).
