@@ -12,7 +12,7 @@ Lingua::EN::Inflect::Phrase - Inflect short English Phrases
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 =head1 SYNOPSIS
 
@@ -84,7 +84,7 @@ sub _inflect {
 
   my $force_singular = $tagged =~ m{
     ^ \s* (?:(?:a|the)/DET)?
-    \s* (?:1|one|single)/(?:JJ|NN|CD)\b
+    \s* (?:1|one)/(?:JJ|NN|CD)\b
     (?!\s* (?:\S+/CC\b | [0-9/]+/CD\b))
   }x;
 
