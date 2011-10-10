@@ -12,7 +12,7 @@ Lingua::EN::Inflect::Phrase - Inflect short English Phrases
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 SYNOPSIS
 
@@ -101,8 +101,8 @@ sub _inflect {
     my @pos = ($-[1], $+[1]);
     my $inflected_noun;
 
-# special case phrases like "2 right braces"
-    if (lc($noun) eq 'right') {
+# special case phrases like "2 right braces" or "2 negative acknowledges"
+    if ($noun =~ /^(?:right|negative)\z/i) {
       (($noun) = $tagged =~ m{$NOUN_OR_VERB (?!.*/(?:NN|CD|JJ|VB[A-Z]?).*/(?:CC|IN)) .* /(?:CC|IN)}x) or
       (($noun) = $tagged =~ m{$NOUN_OR_VERB (?!.*/(?:NN|CD|JJ|VB[A-Z]?))}x);
 
