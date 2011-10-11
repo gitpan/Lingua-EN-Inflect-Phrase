@@ -12,7 +12,7 @@ Lingua::EN::Inflect::Phrase - Inflect short English Phrases
 
 =cut
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 =head1 SYNOPSIS
 
@@ -100,6 +100,11 @@ sub _inflect {
       (($noun) = $tagged =~ m{$NOUN_OR_VERB (?!.*/(?:NN|CD|JJ|VB[A-Z]?))}x)) {
     my @pos = ($-[1], $+[1]);
     my $inflected_noun;
+
+# special case "belongs to" (and in the future, some other verbs)
+    if ($noun =~ /^(?:belongs)\z/i) {
+      return $phrase;
+    }
 
 # special case phrases like "2 right braces" or "2 negative acknowledges"
     if ($noun =~ /^(?:right|negative)\z/i) {
