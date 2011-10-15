@@ -12,7 +12,7 @@ Lingua::EN::Inflect::Phrase - Inflect short English Phrases
 
 =cut
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 =head1 SYNOPSIS
 
@@ -66,6 +66,11 @@ sub _inflect_noun {
 sub _inflect {
   my ($phrase, $want_plural, $method) = @_;
   my $want_singular = not $want_plural;
+
+# 'a' inflects to 'some', special-case it here
+  if ($phrase eq 'a') {
+    return $want_singular ? $phrase : 'as';
+  }
 
 # Do not tag initial number, if any, unless it's "1" which is handled
 # separately. Regex is from perldoc -q 'is a number'.
