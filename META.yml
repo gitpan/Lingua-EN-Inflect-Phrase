@@ -4,12 +4,13 @@ author:
   - 'Rafael Kitover <rkitover@cpan.org>'
   - 'Rafael Kitover <rkitover@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
   Test::More: 0.94
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
-generated_by: 'Module::Install version 1.02'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.04'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -22,7 +23,7 @@ no_index:
 provides:
   Lingua::EN::Inflect::Phrase:
     file: lib/Lingua/EN/Inflect/Phrase.pm
-    version: 0.10
+    version: 0.11
 requires:
   Exporter: 5.63
   Lingua::EN::Inflect: 1.891
@@ -31,4 +32,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/lingua-en-inflect-phrase.git
-version: 0.10
+version: 0.11
