@@ -12,7 +12,7 @@ Lingua::EN::Inflect::Phrase - Inflect short English Phrases
 
 =cut
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 =head1 SYNOPSIS
 
@@ -129,6 +129,9 @@ sub _inflect {
     }
     elsif ($want_singular && lc($noun) eq 'aliases') {
       $inflected_noun = 'alias';
+    }
+    elsif ($want_singular && lc($noun) eq 'statuses') {
+      $inflected_noun = 'status';
     }
     elsif ($force_singular) {
       $inflected_noun = Lingua::EN::Inflect::Number::to_S($noun);
