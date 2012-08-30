@@ -10,7 +10,7 @@ configure_requires:
   ExtUtils::MakeMaker: 6.36
 distribution_type: module
 dynamic_config: 1
-generated_by: 'Module::Install version 1.04'
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,13 +23,13 @@ no_index:
 provides:
   Lingua::EN::Inflect::Phrase:
     file: lib/Lingua/EN/Inflect/Phrase.pm
-    version: 0.12
+    version: 0.13
 requires:
   Exporter: 5.63
   Lingua::EN::Inflect: 1.891
   Lingua::EN::Inflect::Number: 1.1
-  Lingua::EN::Tagger: 0.15
+  Lingua::EN::Tagger: 0.20
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/lingua-en-inflect-phrase.git
-version: 0.12
+version: 0.13
