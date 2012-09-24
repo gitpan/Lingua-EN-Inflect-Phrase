@@ -19,4 +19,5 @@ README
 t/basic.t
 t/bugs.t
 t/lib/TestPhrase.pm
+t/numbers.t
 t/schema-loader.t
