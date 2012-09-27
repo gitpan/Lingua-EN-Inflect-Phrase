@@ -6,6 +6,7 @@ author:
 build_requires:
   ExtUtils::MakeMaker: 6.36
   Test::More: 0.94
+  Test::NoWarnings: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.36
 distribution_type: module
@@ -23,7 +24,7 @@ no_index:
 provides:
   Lingua::EN::Inflect::Phrase:
     file: lib/Lingua/EN/Inflect/Phrase.pm
-    version: 0.14
+    version: 0.15
 requires:
   Exporter: 5.63
   Lingua::EN::FindNumber: 0
@@ -33,4 +34,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/lingua-en-inflect-phrase.git
-version: 0.14
+version: 0.15
