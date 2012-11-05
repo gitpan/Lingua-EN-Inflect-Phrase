@@ -24,14 +24,14 @@ no_index:
 provides:
   Lingua::EN::Inflect::Phrase:
     file: lib/Lingua/EN/Inflect/Phrase.pm
-    version: 0.15
+    version: 0.16
 requires:
   Exporter: 5.63
   Lingua::EN::FindNumber: 0
   Lingua::EN::Inflect: 1.891
   Lingua::EN::Inflect::Number: 1.1
-  Lingua::EN::Tagger: 0.20
+  Lingua::EN::Tagger: 0.23
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/lingua-en-inflect-phrase.git
-version: 0.15
+version: 0.16
