@@ -32,6 +32,6 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Lingua-EN-Inflect-Phrase
   homepage: http://metacpan.org/release/Lingua-EN-Inflect-Phrase
   license: http://dev.perl.org/licenses/
-  repository: git://github.com/avar/lingua-en-inflect-phrase.git
-version: 0.17
+  repository: git://github.com/rkitover/lingua-en-inflect-phrase.git
+version: 0.18
 x_authority: cpan:AVAR

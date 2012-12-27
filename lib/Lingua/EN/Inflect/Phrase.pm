@@ -3,7 +3,7 @@ BEGIN {
   $Lingua::EN::Inflect::Phrase::AUTHORITY = 'cpan:AVAR';
 }
 {
-  $Lingua::EN::Inflect::Phrase::VERSION = '0.17';
+  $Lingua::EN::Inflect::Phrase::VERSION = '0.18';
 }
 
 use strict;
